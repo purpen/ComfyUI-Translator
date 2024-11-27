@@ -8,14 +8,15 @@ class Translator:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "input_text": ("Str", ),
-                "API_KEY": ("Str", ),
+                "input_text": ("STRING", ),
+                "API_KEY": ("STRING", {"default": ""}),
             }
         }
         
     RETURN_TYPES = ("Str",)
     FUNCTION = "translate"
-    CATEGORY = "Redoon"
+    CATEGORY = "AIRedoon"
+    OUTPUT_NODE = True
     
     def translate(self, input_text, api_key=None) -> tuple:
         """
