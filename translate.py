@@ -13,7 +13,7 @@ class Translator:
             }
         }
         
-    RETURN_TYPES = ("Str",)
+    RETURN_TYPES = ("STRING",)
     FUNCTION = "translate"
     CATEGORY = "AIRedoon"
     OUTPUT_NODE = True
